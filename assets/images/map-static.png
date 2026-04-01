@@ -1,0 +1,34 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#F5F5F5"/>
+  
+  <!-- Streets -->
+  <line x1="0" y1="300" x2="800" y2="300" stroke="#D0D0D0" stroke-width="8"/>
+  <line x1="400" y1="0" x2="400" y2="600" stroke="#D0D0D0" stroke-width="8"/>
+  <line x1="200" y1="0" x2="200" y2="600" stroke="#C8C8C8" stroke-width="5"/>
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#C8C8C8" stroke-width="5"/>
+  
+  <!-- Metro Station Marker -->
+  <circle cx="350" cy="380" r="25" fill="#FF8DA1" opacity="0.3"/>
+  <circle cx="350" cy="380" r="15" fill="#FF8DA1"/>
+  <text x="350" y="430" font-family="Arial" font-size="14" fill="#3D2C2C" text-anchor="middle">RTC Metro</text>
+  
+  <!-- Swiss Castle Landmark -->
+  <rect x="450" y="250" width="80" height="60" fill="#FFE8E8" stroke="#FF8DA1" stroke-width="2"/>
+  <text x="490" y="340" font-family="Arial" font-size="12" fill="#3D2C2C" text-anchor="middle">Swiss Castle</text>
+  
+  <!-- CHINOUE Café Location (main pin) -->
+  <circle cx="420" cy="340" r="30" fill="#FF8DA1" opacity="0.2"/>
+  <path d="M 420 310 Q 405 310 405 325 Q 405 340 420 365 Q 435 340 435 325 Q 435 310 420 310 Z" fill="#FF8DA1"/>
+  <circle cx="420" cy="325" r="8" fill="#FFF5F5"/>
+  <text x="420" y="390" font-family="Arial" font-size="16" fill="#FF8DA1" text-anchor="middle" font-weight="bold">CHINOUE</text>
+  
+  <!-- RTC X Roads Label -->
+  <text x="400" y="480" font-family="Arial" font-size="18" fill="#3D2C2C" text-anchor="middle" font-weight="bold">RTC X Roads</text>
+  <text x="400" y="500" font-family="Arial" font-size="12" fill="#6B5757" text-anchor="middle">Hyderabad</text>
+  
+  <!-- Distance indicator -->
+  <line x1="350" y1="370" x2="415" y2="335" stroke="#FF8DA1" stroke-width="2" stroke-dasharray="5,5"/>
+  <rect x="370" y="345" width="40" height="20" fill="white" stroke="#FF8DA1" stroke-width="1" rx="3"/>
+  <text x="390" y="358" font-family="Arial" font-size="11" fill="#FF8DA1" text-anchor="middle" font-weight="bold">250m</text>
+</svg>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="description" content="CHINOUE Café & Patisserie - Built from zero. Brewed with heart. A premium student-friendly café in Hyderabad.">
+    <title>CHINOUE Café & Patisserie | Full Animated Experience</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/loader.css">
+    <link rel="stylesheet" href="css/sections.css">
+    
+    <style>
+        /* Temporary background for missing assets to show structure */
+        .hero__product-img, .story__img-wrap img, .menu__card-img, .workshop__img {
+            background: #eee;
+            min-height: 200px;
+        }
+    </style>
+</head>
+<body class="no-scroll">
+
+    <!-- Animated Loader -->
+    <div id="loader" class="loader">
+        <div class="loader__content">
+            <div class="loader__logo-wrap">
+                <svg class="loader__logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <!-- Heart Drip Icon -->
+                    <path d="M50,85 L45,80 C20,55 5,40 5,25 A20,20 0 0,1 45,15 A20,20 0 0,1 85,25 C85,40 70,55 45,80 L50,85 Z" fill="none" stroke="#FF8DA1" stroke-width="2" class="logo-path" />
+                    <text x="50" y="55" dominant-baseline="middle" text-anchor="middle" font-family="'Playfair Display', serif" font-weight="900" font-size="12" fill="none" stroke="#FF8DA1" stroke-width="0.3">CHINOUE</text>
+                </svg>
+            </div>
+            <div class="loader__progress">
+                <div class="loader__progress-bar"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        
+        <!-- Hero Section (Cinematic Rebuild) -->
+        <section id="hero" class="hero">
+            <!-- Layer 1: BG -->
+            <div class="hero__layer hero__layer--bg">
+                <div class="hero__bg-circle"></div>
+            </div>
+
+            <!-- Layer 2: Typography Back (Outline) -->
+            <div class="hero__layer hero__layer--typography-back">
+                <div class="hero__title--back">CHINOUE</div>
+            </div>
+
+            <!-- Layer 3: Main Product Anchor -->
+            <div class="hero__layer hero__layer--product">
+                <img src="assets/images/hero-coffee.png" alt="Signature Coffee" class="hero__product-img">
+            </div>
+
+            <!-- Layer 4: Typography Front (Headline) -->
+            <div class="hero__layer hero__layer--typography-front">
+                <h1 class="hero__title--front">BUILT FROM ZERO.</h1>
+                <p class="hero__subtitle--front">BREWED WITH HEART</p>
+            </div>
+
+            <!-- Layer 5: High-speed Floaters (Accents) -->
+            <div class="hero__layer hero__layer--accents">
+                <img src="assets/images/hero-dessert.png" alt="Dessert Accent" class="hero__accent accent--1">
+                <img src="assets/images/hero-interior.png" alt="Café Vibe" class="hero__accent accent--2">
+                <div class="hero__accent accent--3" style="font-size: 5rem;">☕</div>
+                <div class="hero__accent accent--4" style="font-size: 6rem;">🍰</div>
+            </div>
+
+            <!-- Global Floating System (Particles) -->
+            <div class="particles-container"></div>
+
+            <!-- Interaction Layer (CTA) -->
+            <div class="hero__content">
+                <div class="hero__cta">
+                    <a href="#menu" class="btn btn--primary">View Menu</a>
+                    <a href="https://wa.me/91XXXXXXXXXX?text=Hi Chinoue! I'd like to visit or order." target="_blank" class="btn btn--highlight">WhatsApp</a>
+                    <a href="#location" class="btn btn--secondary">Visit Café</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scroll Story Section (Brars Pinned Style) -->
+        <section id="story" class="story">
+            <div class="story__pin-wrap">
+                <div class="story__bg-text">CHINOUE STORY</div>
+                
+                <!-- Slide 1: The Stall -->
+                <div class="story__slide">
+                    <div class="story__img-wrap">
+                        <img src="story_stall_realistic_1775033161446.png" alt="First Cheesecake Stall">
+                    </div>
+                    <div class="story__content-stack">
+                        <h2 class="story__title">Born as Hyderabad’s first <span class="story__highlight">cheesecake stall</span>.</h2>
+                        <p class="story__quote">“I didn’t inherit this. I built it.”</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2: The Truck -->
+                <div class="story__slide">
+                    <div class="story__img-wrap">
+                        <img src="dessert_truck_vintage_1775033179431.png" alt="Dessert Truck">
+                    </div>
+                    <div class="story__content-stack">
+                        <h2 class="story__title">Grew into a <span class="story__highlight">dessert truck</span>.</h2>
+                        <p class="story__quote">“Deadlines didn’t care. So I did it myself.”</p>
+                    </div>
+                </div>
+
+                <!-- Slide 3: The Cafe -->
+                <div class="story__slide">
+                    <div class="story__img-wrap">
+                        <img src="assets/images/story-cafe.png" alt="The Cafe">
+                    </div>
+                    <div class="story__content-stack">
+                        <h2 class="story__title">And now… <span class="story__highlight">this café</span>.</h2>
+                        <p class="story__quote">“Not everything was perfect. But we opened.”</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4: The Heart -->
+                <div class="story__slide">
+                    <div class="story__img-wrap logo-heart">
+                        <svg class="story__icon-heart" viewBox="0 0 100 100">
+                            <path d="M50,85 L45,80 C20,55 5,40 5,25 A20,20 0 0,1 45,15 A20,20 0 0,1 85,25 C85,40 70,55 45,80 L50,85 Z" fill="#FF8DA1"/>
+                        </svg>
+                    </div>
+                    <h2 class="story__title">“Every drip on our logo is the <span class="story__highlight">love poured</span> into this journey.”</h2>
+                </div>
+            </div>
+        </section>
+
+        <!-- Full Menu Section -->
+        <!-- Menu Section (Revealing Stream Rebuild) -->
+        <section id="menu" class="menu">
+            <div class="menu__header">
+                <span class="section-tag">The Selection</span>
+                <h2 class="section-title">CHINOUE CLASSICS</h2>
+            </div>
+
+            <div class="menu__stream">
+                <!-- Item 1: Strawberry -->
+                <div class="menu__stream-item">
+                    <div class="menu__item-visual">
+                        <img src="assets/images/menu-strawberry.png" alt="Strawberry Cheesecake">
+                    </div>
+                    <div class="menu__item-info">
+                        <h3 class="menu__item-name">The OG Strawberry</h3>
+                        <p class="menu__item-desc">Hyderabad’s first viral cheesecake. Creamy, tangy, and topped with fresh, hand-picked berries. The one that started it all.</p>
+                        <span class="menu__item-price">₹280</span>
+                    </div>
+                </div>
+
+                <!-- Item 2: Biscoff -->
+                <div class="menu__stream-item">
+                    <div class="menu__item-visual">
+                        <img src="assets/images/menu-biscoff.png" alt="Lotus Biscoff Legendary">
+                    </div>
+                    <div class="menu__item-info">
+                        <h3 class="menu__item-name">The Lotus Legend</h3>
+                        <p class="menu__item-desc">A deep, caramelized crunch meets our signature velvet texture. It’s not just a cheesecake; it’s an obsession.</p>
+                        <span class="menu__item-price">₹320</span>
+                    </div>
+                </div>
+
+                <!-- Item 3: Tiramisu -->
+                <div class="menu__stream-item">
+                    <div class="menu__item-visual">
+                        <img src="assets/images/menu-tiramisu.png" alt="Tiramisu Jar">
+                    </div>
+                    <div class="menu__item-info">
+                        <h3 class="menu__item-name">Tiramisu Jar</h3>
+                        <p class="menu__item-desc">Coffee-soaked sponge layered with whipped mascarpone. Portable perfection for the true espresso lover.</p>
+                        <span class="menu__item-price">₹250</span>
+                    </div>
+                </div>
+
+                <!-- Item 4: Mojito -->
+                <div class="menu__stream-item">
+                    <div class="menu__item-visual">
+                        <img src="assets/images/menu-mojito.png" alt="Blueberry Mojito">
+                    </div>
+                    <div class="menu__item-info">
+                        <h3 class="menu__item-name">Blueberry Chill</h3>
+                        <p class="menu__item-desc">Muddled mint, fresh blueberries, and a squeeze of lime. The ultimate palate cleanser between bites of heaven.</p>
+                        <span class="menu__item-price">₹180</span>
+                    </div>
+                </div>
+
+                <!-- Item 5: Latte -->
+                <div class="menu__stream-item">
+                    <div class="menu__item-visual">
+                        <img src="assets/images/menu-latte.png" alt="Hazelnut Latte">
+                    </div>
+                    <div class="menu__item-info">
+                        <h3 class="menu__item-name">Hazelnut Dream</h3>
+                        <p class="menu__item-desc">Silky micro-foam paired with nutty hazelnut undertones. Our coffee is built to complement our pastries perfectly.</p>
+                        <span class="menu__item-price">₹220</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Global Floating System Container (Injected via JS) -->
+        <div class="particles-container"></div>
+
+        <!-- Wall of Love (Reviews) Section -->
+        <section id="reviews" class="reviews">
+            <div class="reviews__header">
+                <p class="reviews__subtitle">TESTIMONIALS</p>
+                <h2 class="reviews__title">Wall of Love</h2>
+            </div>
+
+            <div class="reviews__grid">
+                <!-- 1. Eswar Gullapudi -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a-/ALV-EMh1i2j3k4l5m6n7o8p9q0r1s2t3u4v5w6x7y8z9a0b1c=s120-c-rp-mo-ba3-br100" alt="Eswar" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Eswar Gullapudi</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"This is the one of best place to chill out around the area. Yes, there are some small minute corrections need to be done in food. But you need to try their food. We tried their blueberry cheesecake and pasta, they were simply amazing."</p>
+                </div>
+
+                <!-- 2. Krishnaveni Anuhya -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocL8zBvX8R3YnQ2V1F5S6d7g8h9i0j1k2l3m4n5o6p7q=s120-c-rp-mo-br100" alt="Krishnaveni" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Krishnaveni Anuhya</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"Taste is awesome"</p>
+                </div>
+
+                <!-- 3. Akhil Babu -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocL8zBvX8R3YnQ2V1F5S6d7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-br100" alt="Akhil" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Akhil Babu</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"I tried pasta here it is really very delicious, must try♥️!!!"</p>
+                </div>
+
+                <!-- 4. Nehal Sheth -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocI1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-br100" alt="Nehal" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Nehal Sheth</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"We tried their beverages. They were very tasty and refreshing."</p>
+                </div>
+
+                <!-- 5. Bhaskar Balapuram -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocM1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-br100" alt="Bhaskar" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Bhaskar Balapuram</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"The cafe has such a cozy and welcoming vibe. The food was delicious, especially the pasta and waffle..."</p>
+                </div>
+
+                <!-- 6. harish .ramineni -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocK1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-br100" alt="Harish" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">harish. ramineni</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"We are loved it👌..... food so tasty..."</p>
+                </div>
+
+                <!-- 7. nag clicks -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a-/ALV-EMN1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-ba4-br100" alt="Nag" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">nag clicks</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"Delicious pasta experience 😋😍❤️"</p>
+                </div>
+
+                <!-- 8. Shilpa Reddy -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocO1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-br100" alt="Shilpa" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Shilpa Reddy</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"Gods food ..."</p>
+                </div>
+
+                <!-- 9. Niharika Panagatla -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a-/ALV-EMP1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-ba2-br100" alt="Niharika" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">Niharika Panagatla</h4>
+                            <div class="review-card__stars">★★★★☆</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"Good food"</p>
+                </div>
+
+                <!-- 10. vyshnavi Chervirala -->
+                <div class="review-card">
+                    <div class="review-card__header">
+                        <img src="https://lh3.googleusercontent.com/a/ACg8ocQ1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o6p7q8r9s0tu=s120-c-rp-mo-br100" alt="Vyshnavi" class="review-card__avatar">
+                        <div class="review-card__info">
+                            <h4 class="review-card__name">vyshnavi Chervirala</h4>
+                            <div class="review-card__stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <p class="review-card__text">"Ntg much"</p>
+                </div>
+            </div>
+            
+            <div class="reviews__footer text-center mt-lg">
+                <a href="https://www.google.com/maps/place/CHINOUE+-+CAF%C3%89+%26+PATISSERIE/@17.4102636,78.4980528,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcb99006ff80109:0xdf97c12ce9026722!8m2!3d17.4102636!4d78.4980528!16s%2Fg%2F11mrqz80n2!18m1!1e1" target="_blank" class="btn btn--secondary">Write a Review</a>
+            </div>
+        </section>
+
+        <!-- Specials Section (Happy Hours & Strawberry) -->
+        <section class="specials">
+            <div class="specials__container">
+                <h2 class="specials__title">Limited Time</h2>
+                <div class="specials__grid">
+                    <div class="special-card">
+                        <h3>Happy Hours</h3>
+                        <p>Student Combos from ₹99</p>
+                        <p class="special-card__desc">Available Daily 4PM - 7PM</p>
+                    </div>
+                    <div class="special-card headline-strawberry">
+                        <img src="strawberry_specials_dessert_1775033196624.png" alt="Strawberry Specials" class="special-card__bg">
+                        <div class="special-card__content">
+                            <h3>Strawberry Season</h3>
+                            <p>Specials from ₹69</p>
+                            <p class="special-card__desc">Chocodips, Waffles & Tresleches</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Workshops Section -->
+        <section id="workshops" class="workshops">
+            <div class="workshops__container">
+                <h2 class="workshops__title">Creative Workshops</h2>
+                <div class="workshops__grid">
+                    <div class="workshop__card">
+                        <div class="workshop__img-wrap">
+                            <img src="assets/images/workshop-paint.png" alt="Paint & Sip" class="workshop__img">
+                        </div>
+                        <div class="workshop__content">
+                            <h3>Paint & Sip</h3>
+                            <p>Food + Mojito + Materials included.</p>
+                            <div class="workshop__details">
+                                <span class="workshop__price">₹499</span>
+                                <a href="#contact" class="btn btn--primary btn--small">Book Spot</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="workshop__card">
+                        <div class="workshop__img-wrap">
+                            <img src="assets/images/workshop-moulded.png" alt="Moulded Art" class="workshop__img">
+                        </div>
+                        <div class="workshop__content">
+                            <h3>Moulded Art</h3>
+                            <p>Hand-crafted therapy for the soul.</p>
+                            <div class="workshop__details">
+                                <span class="workshop__price">₹699</span>
+                                <a href="#contact" class="btn btn--primary btn--small">Book Spot</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Location Section -->
+        <section id="location" class="location">
+            <div class="location__container" style="max-width: 1200px; margin: 0 auto; padding: var(--space-3xl) var(--space-md); text-align: center;">
+                <h2 class="location__title">Visit the Vibe</h2>
+                <p>RTC X Roads, Hyderabad | 250m from RTC Metro</p>
+                <div class="location__map-wrap" style="margin-top: 2rem; border-radius: 40px; overflow: hidden; height: 400px; background: #eee;">
+                    <!-- Static Map Implementation -->
+                    <img src="assets/images/location-map.png" alt="Map" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                <a href="https://maps.google.com/?q=CHINOUE+Cafe+Hyderabad" target="_blank" class="btn btn--secondary" style="margin-top: 2rem;">Get Directions</a>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact" style="padding: var(--space-3xl) var(--space-md); background: var(--cream);">
+            <div class="contact__container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <h2 class="contact__title">Say Hello</h2>
+                <form id="contact-form" class="contact__form" style="margin-top: 3rem; display: grid; gap: 1rem;">
+                    <input type="text" placeholder="Name" required style="padding: 1.5rem; border-radius: 20px; border: 1px solid #ddd;">
+                    <textarea placeholder="Message" rows="4" style="padding: 1.5rem; border-radius: 20px; border: 1px solid #ddd;"></textarea>
+                    <button type="submit" class="btn btn--primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Sticky Mobile Bar -->
+    <nav class="mobile-bar">
+        <a href="#menu" class="mobile-bar__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            <span>MENU</span>
+        </a>
+        <a href="https://instagram.com/chinouecafe" target="_blank" class="mobile-bar__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zM17.5 6.5h.01"/></svg>
+            <span>FOLLOW</span>
+        </a>
+        <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="mobile-bar__item mobile-bar__item--highlight">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 11-7.6-7.6 8.38 8.38 0 013.8.9L21 4.5z"/></svg>
+            <span>WHATSAPP</span>
+        </a>
+        <a href="#location" class="mobile-bar__item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>VISIT</span>
+        </a>
+    </nav>
+
+    <!-- Footer -->
+    <footer class="footer" style="padding: 4rem 2rem; background: var(--text-dark); color: white; text-align: center;">
+        <h2 style="font-family: var(--font-display);">CHINOUE</h2>
+        <p style="opacity: 0.6; margin-top: 1rem;">Built from zero. Brewed with heart.</p>
+    </footer>
+
+    <!-- GSAP Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+    
+    <!-- Custom Scripts -->
+    <script src="js/animations.js"></script>
+
+</body>
+</html>
